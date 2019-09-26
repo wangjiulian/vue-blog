@@ -1,0 +1,87 @@
+@import '../../style//mixin.scss';
+
+.follow-wrapper {
+
+  .content {
+    padding-top: 87px;
+    width: 1200px;
+    margin: 0 auto;
+
+    p.title {
+      height: 28px;
+      margin-top: 36px;
+      font-size: 20px;
+      font-family: PingFangSC;
+      font-weight: 400;
+      color: rgba(68, 68, 68, 1);
+      line-height: 28px;
+    }
+
+    ul {
+      width: 100%;
+      margin-top: 52px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      li {
+        position: relative;
+        width: 363px;
+        padding: 25px 27px;
+        margin-bottom: 38px;
+        background: #fff;
+        .follow {
+          z-index: 2;
+          position: absolute;
+          top: 25px;
+          right: 20px;
+          height: 14px;
+        }
+
+        .avatar {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: rgba(216, 216, 216, 1);
+        }
+
+        .detail {
+          left: 109px;
+          @include ct;
+
+          .nick-name {
+            display: block;
+            height: 22px;
+            width: 100%;
+            font-size: 16px;
+            font-family: PingFangSC;
+            font-weight: 400;
+            padding-right: 24px;
+            color: rgba(68, 68, 68, 1);
+            line-height: 22px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+          }
+
+          
+          .signature {
+            margin-top: 6px;
+            padding-right: 10px;
+            font-size: 12px;
+            font-family: PingFangSC;
+            font-weight: 400;
+            color: rgba(150, 150, 150, 1);
+            line-height: 20px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+
+          }
+        }
+      }
+    }
+  }
+}

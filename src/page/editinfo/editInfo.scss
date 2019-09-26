@@ -1,0 +1,182 @@
+@import '../../style/mixin.scss';
+
+.right-circle{
+  position: relative;
+}
+.right-circle::after{
+  @include ct;
+   content: '222222';
+   width:20px;
+   height:20px;
+   border-radius: 50%;
+   background: red;
+}
+.edit-info-wrapper {
+  .edit-info-content {
+    width: 1191px;
+    margin: 0 auto;
+    padding-top: 87px;
+    .tip {
+      height: 16px;
+      margin-top: 29px;
+      margin-bottom: 4px;
+      font-size: 14px;
+      font-family: PingFangSC;
+      font-weight: 400;
+      color: rgba(105, 105, 105, 1);
+      line-height: 16px;
+    }
+
+    .right-tip {
+      float: right;
+      height: 16px;
+      font-size: 14px;
+      font-family: PingFangSC;
+      font-weight: 400;
+      color: rgba(191, 191, 191, 1);
+      line-height: 16px;
+    }
+
+    .div-avatar {
+      position: relative;
+      width: 154px;
+      height: 124px;
+      text-align: center;
+      background: #fff;
+
+      .cover-icon {
+        @include center;
+        width: 50px;
+      }
+
+      .avatar {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .file {
+        z-index: 2;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+      }
+    }
+
+    input,
+    select {
+      width: 100%;
+      height: 51px;
+      padding: 0 10px;
+      font-size: 16px;
+      background: #fff;
+      appearance: none;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      font-size: 16px;
+      background: #fff;
+    }
+
+    .save {
+      height: 63px;
+      line-height: 63px;
+      margin-top: 62px;
+      margin-bottom: 70px;
+      font-size: 18px;
+      font-family: PingFangSC;
+      font-weight: 400;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+      background: #000;
+    }
+  }
+}
+
+@media (max-width:1080px) {
+  .edit-info-content {
+    width: 670px !important;
+    padding-top: 49px !important;
+
+    .title {
+      margin-top: 21px !important;
+      margin-bottom: 35px !important;
+    }
+
+    .div-avatar {
+      width: 87px !important;
+      height: 70px !important;
+    }
+
+    input,
+    select {
+      height: 29px !important;
+      padding: 0 7px !important;
+      font-size: 14px !important;
+    }
+
+    textarea {
+      height: 76px !important;
+      padding: 6px !important;
+      font-size: 14px !important;
+    }
+
+    .save {
+      margin-top: 35px !important;
+      margin-bottom: 40px !important;
+      height: 36px !important;
+      line-height: 36px !important;
+    }
+  }
+}
+
+@media (max-width:1440px) {
+  .edit-info-content {
+    width: 892px !important;
+    padding-top: 66px !important;
+
+    .title {
+      margin-top: 28px !important;
+      margin-bottom: 47px !important;
+    }
+
+    .div-avatar {
+      width: 116px !important;
+      height: 94px !important;
+    }
+
+    .save {
+      margin-top: 47px !important;
+      margin-bottom: 53px !important;
+      height: 48px !important;
+      line-height: 48px !important;
+    }
+
+    input,
+    select {
+      height: 39px !important;
+      padding: 0 7px !important;
+      font-size: 14px !important;
+    }
+
+    textarea {
+      height: 101px !important;
+      padding: 6px !important;
+      font-size: 14px !important;
+    }
+
+  }
+}

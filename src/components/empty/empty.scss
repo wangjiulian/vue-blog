@@ -1,0 +1,24 @@
+@import '../../style/mixin.scss';
+.empty-component{
+    .empty-content{
+        width: 400px;
+        margin:  auto;
+        padding-top: 70px;
+        img {  
+          display: block;
+          width: 200px;
+          margin:  0 auto;
+        }
+        p {
+          padding: 30px 0 50px 0;
+          height: 22px;
+          font-size: 16px;
+          text-align: center;
+          font-family: PingFangSC;
+          font-weight: 400;
+          color: rgba(191, 191, 191, 1);
+          line-height: 22px;
+        }
+    }
+    
+}
