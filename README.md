@@ -1,6 +1,6 @@
 # vue-blog-master
 
-> A Vue.js project
+> Vue博客系统
 
 ## Build Setup
 
