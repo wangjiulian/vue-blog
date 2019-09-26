@@ -1,6 +1,6 @@
 # vue-blog-master
 
-> Vue博客系统
+> Vue博客系统 前台 http://blog.runsss.com 后台http://admin.blog.runsss.com/ 账号:test 222222
 
 ## Build Setup
 
